@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="ru"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALFA RESEARCH CENTER | MODERN FINTECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-secondary-container": "#656464",
+                    "background": "#f8f9fb",
+                    "outline": "#926f69",
+                    "on-error": "#ffffff",
+                    "surface-container": "#edeef0",
+                    "surface-tint": "#FF0000",
+                    "on-primary": "#ffffff",
+                    "surface": "#f8f9fb",
+                    "error-container": "#ffdad6",
+                    "on-background": "#191c1e",
+                    "on-tertiary-container": "#fcfcff",
+                    "tertiary-fixed-dim": "#8ccdff",
+                    "on-primary-fixed-variant": "#930002",
+                    "on-tertiary": "#ffffff",
+                    "surface-variant": "#e1e2e4",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "inverse-primary": "#ffb4a9",
+                    "secondary-fixed": "#e5e2e1",
+                    "tertiary": "#00628f",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#f8f9fb",
+                    "secondary": "#5f5e5e",
+                    "on-surface": "#191c1e",
+                    "outline-variant": "#e7bdb7",
+                    "on-surface-variant": "#5d3f3b",
+                    "tertiary-container": "#007cb4",
+                    "inverse-surface": "#2e3132",
+                    "surface-container-highest": "#e1e2e4",
+                    "on-secondary-fixed": "#1c1b1b",
+                    "surface-container-low": "#f3f4f6",
+                    "primary-fixed": "#ffdad5",
+                    "error": "#ba1a1a",
+                    "on-primary-container": "#fffbff",
+                    "surface-container-high": "#e7e8ea",
+                    "on-secondary-fixed-variant": "#474646",
+                    "secondary-container": "#e5e2e1",
+                    "surface-dim": "#d9dadc",
+                    "primary-container": "#FF0000",
+                    "on-primary-fixed": "#410000",
+                    "on-secondary": "#ffffff",
+                    "primary": "#FF0000",
+                    "primary-fixed-dim": "#ffb4a9",
+                    "on-tertiary-fixed-variant": "#004b70",
+                    "surface-container-lowest": "#ffffff",
+                    "inverse-on-surface": "#f0f1f3",
+                    "on-tertiary-fixed": "#001e30",
+                    "tertiary-fixed": "#cae6ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "32px",
+                    "lg": "32px",
+                    "xl": "40px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        .hero-gradient {
+            background: linear-gradient(135deg, #191c1e 0%, #000000 100%);
+        }
+        .btn-hover-effect {
+            border-radius: 9999px !important;
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -10px rgba(255, 0, 0, 0.5);
+        }
+        .rounded-3xl-plus {
+            border-radius: 32px;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopAppBar -->
+<header class="bg-white/80 dark:bg-zinc-950/80 backdrop-blur-xl fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 flex justify-between items-center px-8 py-4 rounded-full border border-zinc-200/50 dark:border-zinc-800/50 shadow-lg">
+<div class="text-xl font-black tracking-tighter text-zinc-900 dark:text-white font-['Inter'] uppercase" style="">
+        ALFA RESEARCH
+    </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#FF0000] dark:text-[#FF0000] font-bold tracking-tight uppercase transition-all duration-200" href="#" style="">ИССЛЕДОВАНИЯ</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-bold tracking-tight uppercase hover:text-[#FF0000] transition-all duration-200" href="#" style="">РЕШЕНИЯ</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-bold tracking-tight uppercase hover:text-[#FF0000] transition-all duration-200" href="#" style="">ФОРМАТЫ</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-bold tracking-tight uppercase hover:text-[#FF0000] transition-all duration-200" href="#" style="">СТОИМОСТЬ</a>
+<a class="text-zinc-500 dark:text-zinc-400 font-bold tracking-tight uppercase hover:text-[#FF0000] transition-all duration-200" href="#" style="">КОМАНДА</a>
+</nav>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-full font-bold tracking-widest text-xs uppercase btn-hover-effect transition-all active:scale-95" style="">ЗАБРОНИРОВАТЬ</button>
+</header>
+<!-- Hero Section -->
+<section class="px-4 md:px-8 pt-24 pb-8">
+<div class="hero-gradient rounded-3xl-plus pt-32 pb-24 px-8 md:px-16 min-h-[85vh] flex flex-col justify-center relative overflow-hidden">
+<div class="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none">
+<img class="w-full h-full object-cover grayscale invert" data-alt="Technical blueprint of a digital interface grid with sharp red laser lines on deep black background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDoWNDU6kZUedhfZ182lrqUZBX3sk9a74sTog8rEz9Cp2USlu_llOLE1M9Z1x2B_poi050v4MbAUrj8W_kduP-Aqc4sZTn1NB83tSJuHMpZGARgnysAcHVuF6LvQ78I-muWJEAmH-P2HNIcPiN7w3Nv4x5I8gKd6tWU4p5oyMN0D2MTDgsTx-JMwL_LWvaKgP1AJCJNGHay2NZbUb39bS1nRofcGCSf-q8txgkEtigJsPQDFPGDDAfH_n-km0iOzRuHuiuWPxVouQU" style=""/>
+</div>
+<div class="max-w-5xl relative z-10">
+<div class="inline-block border-l-4 border-primary pl-4 mb-8">
+<span class="text-primary font-bold tracking-[0.3em] text-sm uppercase" style="">КОРПОРАТИВНЫЙ ЦЕНТР ИССЛЕДОВАНИЙ</span>
+</div>
+<h1 class="text-white text-5xl md:text-7xl font-black tracking-tighter leading-[1] mb-8 uppercase" style="">
+                Краш-тест цифровых продуктов и страховка ваших IT-бюджетов
+            </h1>
+<p class="text-zinc-400 text-lg md:text-xl max-w-2xl mb-12 font-medium leading-relaxed" style="">
+                Мы используем биометрию и окулографию, чтобы найти ошибки в UX задолго до того, как они сожгут ваш маркетинговый бюджет.
+            </p>
+<div class="flex flex-col md:flex-row gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-full text-sm font-black tracking-widest uppercase btn-hover-effect transition-all" style="">
+                    Забронировать референс-визит
+                </button>
+<button class="border-2 border-white/20 text-white px-10 py-5 rounded-full text-sm font-black tracking-widest uppercase hover:bg-white hover:text-black transition-all" style="">
+                    Скачать пример тикета для Jira
+                </button>
+</div>
+</div>
+<div class="mt-24 border-t border-zinc-800 pt-12">
+<p class="text-zinc-500 text-xs font-bold tracking-[0.2em] mb-8 uppercase" style="">НАМ ДОВЕРЯЮТ ЛИДЕРЫ РЫНКА</p>
+<div class="flex flex-wrap gap-12 items-center opacity-40 grayscale contrast-125">
+<span class="text-white text-xl font-black tracking-tighter uppercase italic" style="">Яндекс</span>
+<span class="text-white text-xl font-black tracking-tighter uppercase italic" style="">СИБУР</span>
+<span class="text-white text-xl font-black tracking-tighter uppercase italic" style="">ПИК</span>
+<span class="text-white text-xl font-black tracking-tighter uppercase italic" style="">МегаФон</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Problem Section -->
+<section class="bg-surface py-24 px-8 md:px-16">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end gap-8 mb-24">
+<div class="max-w-2xl">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase block mb-4" style="">АНАЛИЗ ПРОБЛЕМАТИКИ</span>
+<h2 class="text-on-surface text-4xl md:text-6xl font-black tracking-tighter leading-tight uppercase" style="">
+                    Почему обычные исследования вас обманывают?
+                </h2>
+</div>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="bg-surface-container-low p-12 rounded-3xl-plus group hover:bg-white hover:shadow-2xl transition-all duration-500">
+<span class="text-primary text-5xl font-black mb-12 block" style="">01</span>
+<h3 class="text-2xl font-black tracking-tight mb-6 uppercase transition-colors" style="">Проблема кастдевов</h3>
+<p class="text-zinc-600 leading-relaxed transition-colors" style="">Люди лгут, даже не осознавая этого. Социальная желаемость ответов искажает данные в 70% случаев качественных интервью.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-low p-12 rounded-3xl-plus group hover:bg-white hover:shadow-2xl transition-all duration-500">
+<span class="text-primary text-5xl font-black mb-12 block" style="">02</span>
+<h3 class="text-2xl font-black tracking-tight mb-6 uppercase transition-colors" style="">Долгие отчеты</h3>
+<p class="text-zinc-600 leading-relaxed transition-colors" style="">Классические агентства готовят PDF-презентации неделями, когда ваше решение по фиче нужно было еще вчера утром.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-low p-12 rounded-3xl-plus group hover:bg-white hover:shadow-2xl transition-all duration-500">
+<span class="text-primary text-5xl font-black mb-12 block" style="">03</span>
+<h3 class="text-2xl font-black tracking-tight mb-6 uppercase transition-colors" style="">Опасность A/B тестов</h3>
+<p class="text-zinc-600 leading-relaxed transition-colors" style="">A/B тесты показывают "что", но никогда не объясняют "почему". Вы можете выбрать локальный максимум и потерять видение продукта.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Solution Section -->
+<section class="px-4 md:px-8 pb-8">
+<div class="bg-inverse-surface rounded-3xl-plus py-32 px-8 md:px-16 overflow-hidden relative">
+<div class="absolute inset-0 opacity-10 mix-blend-overlay">
+<img class="w-full h-full object-cover" data-alt="Macro view of a computer motherboard with traces illuminated by red fiber optics, high-tech industrial aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDcqxuoGp9k85YR2uIutFGP-L6TR_Jh4T4QEcDcXsv4YHyxcy4CSJeh_dTilrJLBGsR87rVIQvk2urvyyk_n40FaxqA14dsgx-Om-cvhbk7U2odOBCIuKt6rI8lnJJT2imWc_rjfs1NEm79Qen3ysaxbXgZr6P1uslyifcEhpTttgN80wuIQBz__AVBScEnYsB1SQEWm9WgqWhKTAeeQbX6mPwEFyYkqVZT_WgLLy5a0YPaHLxlfjuz_kkzLIHsXxhyYNhu92_5E" style=""/>
+</div>
+<div class="max-w-screen-2xl mx-auto relative z-10">
+<h2 class="text-white text-4xl md:text-6xl font-black tracking-tighter leading-none mb-24 uppercase max-w-4xl" style="">
+                Словам можно не верить. <span class="text-primary" style="">Физиологии — придется.</span>
+</h2>
+<div class="grid md:grid-cols-3 gap-16 border-t border-white/10 pt-16">
+<div>
+<div class="w-12 h-1 bg-primary mb-8 rounded-full"></div>
+<h4 class="text-white text-xl font-bold tracking-tighter uppercase mb-4" style="">15 реалистичных сред</h4>
+<p class="text-zinc-500 leading-relaxed" style="">Симуляция реального использования: от шумного вагона метро до офисного оупенспейса в VR.</p>
+</div>
+<div>
+<div class="w-12 h-1 bg-primary mb-8 rounded-full"></div>
+<h4 class="text-white text-xl font-bold tracking-tighter uppercase mb-4" style="">Точность 250 Гц</h4>
+<p class="text-zinc-500 leading-relaxed" style="">Профессиональные айтрекеры фиксируют микро-саккады и когнитивную нагрузку в реальном времени.</p>
+</div>
+<div>
+<div class="w-12 h-1 bg-primary mb-8 rounded-full"></div>
+<h4 class="text-white text-xl font-bold tracking-tighter uppercase mb-4" style="">Прямо в бэклог</h4>
+<p class="text-zinc-500 leading-relaxed" style="">Никаких лишних слов. Только конкретные баги и точки роста, оформленные как тикеты для Jira.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Matrix -->
+<section class="bg-surface py-24 px-8 md:px-16">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-24">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase block mb-4" style="">ПРОДУКТОВАЯ ВИТРИНА</span>
+<h2 class="text-on-surface text-4xl md:text-6xl font-black tracking-tighter uppercase" style="">Доступные форматы</h2>
+</div>
+<div class="grid md:grid-cols-4 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-3xl-plus shadow-sm border border-zinc-100 flex flex-col">
+<h4 class="text-sm font-bold tracking-widest text-zinc-400 uppercase mb-8" style="">БАЗОВЫЙ</h4>
+<h3 class="font-black uppercase mb-4 text-xl" style="word-break: keep-all; overflow-wrap: normal;">РАЗОВЫЙ АУДИТ</h3>
+<p class="text-zinc-500 text-sm mb-12 flex-grow" style="">Разовое исследование конкретной фичи или сценария. Отчет через 3 дня.</p>
+<div class="mt-auto">
+<span class="text-2xl font-black text-on-surface block mb-8" style="">90к ₽</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl-plus shadow-sm border border-zinc-100 flex flex-col">
+<h4 class="text-sm font-bold tracking-widest text-zinc-400 uppercase mb-8" style="">ЭКСПРЕСС</h4>
+<h3 class="font-black uppercase mb-4 text-xl" style="word-break: keep-all; overflow-wrap: normal;">КРАШ-ТЕСТ</h3>
+<p class="text-zinc-500 text-sm mb-12 flex-grow" style="">Экспресс-анализ интерфейса экспертами центра без участия респондентов.</p>
+<div class="mt-auto">
+<span class="text-2xl font-black text-on-surface block mb-8" style="">45к ₽</span>
+</div>
+</div>
+<!-- Core Subscription -->
+<div class="bg-primary p-8 rounded-3xl-plus shadow-2xl scale-105 z-10 relative flex flex-col">
+<div class="absolute top-0 right-0 p-6">
+<span class="material-symbols-outlined text-white/50 text-3xl" data-icon="star" style='font-variation-settings: "FILL" 1;'>star</span>
+</div>
+<h4 class="text-sm font-bold tracking-widest text-white/60 uppercase mb-8" style="">ОСНОВНОЙ ПРОДУКТ</h4>
+<h3 class="font-black uppercase text-white mb-4 text-xl" style="word-break: keep-all; overflow-wrap: normal;">ИССЛЕДОВАНИЯ<br/>ПО ПОДПИСКЕ</h3>
+<p class="text-white/80 text-sm mb-12 flex-grow" style="">Неограниченный доступ к лаборатории. Мы становимся частью вашей продуктовой команды.</p>
+<div class="mt-auto">
+<span class="text-3xl font-black text-white block mb-8" style="">250к ₽ <span class="text-lg font-medium opacity-70" style="">/ мес</span></span>
+<button class="w-full bg-white text-primary py-4 rounded-full text-xs font-black tracking-widest uppercase hover:bg-zinc-100 transition-colors" style="">Подключить</button>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-3xl-plus shadow-sm border border-zinc-100 flex flex-col">
+<h4 class="text-sm font-bold tracking-widest text-zinc-400 uppercase mb-8" style="">VIP-ПРОЕКТ</h4>
+<h3 class="font-black uppercase mb-4 text-xl" style="word-break: keep-all; overflow-wrap: normal;">ЦЕНТР ПОД КЛЮЧ</h3>
+<p class="text-zinc-500 text-sm mb-12 flex-grow" style="">Построение собственной лаборатории внутри вашей компании "под ключ".</p>
+<div class="mt-auto">
+<span class="text-2xl font-black text-on-surface block mb-8" style="">По запросу</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Cases Section -->
+<section class="bg-[#F3F4F6] py-24 px-8 md:px-16">
+<div class="max-w-screen-2xl mx-auto">
+<div class="mb-16">
+<span class="text-primary font-bold tracking-[0.2em] text-xs uppercase block mb-4" style="">ИСТОРИИ УСПЕХА</span>
+<h2 class="text-on-surface text-4xl md:text-6xl font-black tracking-tighter uppercase" style="">Доказанная эффективность на практике</h2>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Case 1 -->
+<div class="bg-white p-10 rounded-3xl-plus shadow-sm flex flex-col h-full border border-zinc-200">
+<div class="mb-8">
+<span class="bg-zinc-100 text-zinc-600 px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase border border-zinc-200" style="">ТОП-3 Банк РФ</span>
+</div>
+<h3 class="text-2xl font-black uppercase mb-6 tracking-tight" style="">Краш-тест онбординга</h3>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="text-zinc-400 text-[10px] font-bold tracking-widest uppercase mb-1" style="">Контекст</p>
+<p class="text-zinc-600 text-sm leading-relaxed" style="">Валидация нового флоу регистрации в мобильном приложении до передачи в разработку.</p>
+</div>
+<div>
+<p class="text-zinc-400 text-[10px] font-bold tracking-widest uppercase mb-1" style="">ИНСАЙТ ARC</p>
+<p class="text-zinc-600 text-sm leading-relaxed" style="">Айтрекинг 250 Гц выявил "баннерную слепоту" — 40% пользователей физически не замечали кнопку согласия из-за сливающегося фона.</p>
+</div>
+<div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+<p class="text-primary text-[10px] font-bold tracking-widest uppercase mb-1" style="">Результат</p>
+<p class="text-zinc-900 font-bold text-sm" style="">
+<span class="text-primary" style="">+18% конверсия</span> в открытие счета. Внесено 4 правки в макеты за 2 дня.
+                        </p>
+</div>
+</div>
+<div class="mt-10">
+<a class="inline-flex items-center gap-2 text-zinc-900 font-black text-xs tracking-widest uppercase group" href="#" style="">
+                        Читать кейс 
+                        <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Case 2 -->
+<div class="bg-white p-10 rounded-3xl-plus shadow-sm flex flex-col h-full border border-zinc-200">
+<div class="mb-8">
+<span class="bg-zinc-100 text-zinc-600 px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase border border-zinc-200" style="">Крупнейший маркетплейс</span>
+</div>
+<h3 class="text-2xl font-black uppercase mb-6 tracking-tight" style="">RaaS-поддержка редизайна</h3>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="text-zinc-400 text-[10px] font-bold tracking-widest uppercase mb-1" style="">Контекст</p>
+<p class="text-zinc-600 text-sm leading-relaxed" style="">Спринт-проверка нового чекаута (корзины) перед раскаткой на 10 млн пользователей.</p>
+</div>
+<div>
+<p class="text-zinc-400 text-[10px] font-bold tracking-widest uppercase mb-1" style="">ИНСАЙТ ARC</p>
+<p class="text-zinc-600 text-sm leading-relaxed" style="">Нейросети зафиксировали микростресс и рост когнитивной нагрузки при выборе способа оплаты. Передали готовый тикет в Jira на упрощение логики.</p>
+</div>
+<div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+<p class="text-primary text-[10px] font-bold tracking-widest uppercase mb-1" style="">Результат</p>
+<p class="text-zinc-900 font-bold text-sm" style="">
+<span class="text-primary" style="">Предотвращен релиз</span>, который стоил бы компании 12 млн рублей убытка.
+                        </p>
+</div>
+</div>
+<div class="mt-10">
+<a class="inline-flex items-center gap-2 text-zinc-900 font-black text-xs tracking-widest uppercase group" href="#" style="">
+                        Читать кейс 
+                        <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Case 3 -->
+<div class="bg-white p-10 rounded-3xl-plus shadow-sm flex flex-col h-full border border-zinc-200">
+<div class="mb-8">
+<span class="bg-zinc-100 text-zinc-600 px-4 py-2 rounded-full text-[10px] font-black tracking-widest uppercase border border-zinc-200" style="">Федеральный оператор</span>
+</div>
+<h3 class="text-2xl font-black uppercase mb-6 tracking-tight" style="">Аудит B2E-интерфейсов</h3>
+<div class="space-y-6 flex-grow">
+<div>
+<p class="text-zinc-400 text-[10px] font-bold tracking-widest uppercase mb-1" style="">Контекст</p>
+<p class="text-zinc-600 text-sm leading-relaxed" style="">Оптимизация рабочего места (CRM) для сотрудников колл-центра.</p>
+</div>
+<div>
+<p class="text-zinc-400 text-[10px] font-bold tracking-widest uppercase mb-1" style="">ИНСАЙТ ARC</p>
+<p class="text-zinc-600 text-sm leading-relaxed" style="">Трекинг взгляда показал хаотичный поиск кнопки перевода звонка (задержка 4 секунды на каждом клиенте).</p>
+</div>
+<div class="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+<p class="text-primary text-[10px] font-bold tracking-widest uppercase mb-1" style="">Результат</p>
+<p class="text-zinc-900 font-bold text-sm" style="">
+<span class="text-primary" style="">Экономия &gt;30 млн руб/год</span> на операционных костах. Сокращение AHT на 12%.
+                        </p>
+</div>
+</div>
+<div class="mt-10">
+<a class="inline-flex items-center gap-2 text-zinc-900 font-black text-xs tracking-widest uppercase group" href="#" style="">
+                        Читать кейс 
+                        <span class="material-symbols-outlined text-primary group-hover:translate-x-1 transition-transform" style="">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Metrics -->
+<section class="bg-white py-24 px-8 md:px-16 mx-4 md:mx-8 mb-24 rounded-3xl-plus shadow-sm border border-zinc-100">
+<div class="max-w-screen-2xl mx-auto grid md:grid-cols-4 gap-12">
+<div class="text-center">
+<span class="text-primary text-6xl font-black tracking-tighter mb-4 block" style="">98%</span>
+<span class="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase" style="">Точность прогнозов</span>
+</div>
+<div class="text-center">
+<span class="text-on-surface text-6xl font-black tracking-tighter mb-4 block" style="">+17%</span>
+<span class="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase" style="">Средний рост CR</span>
+</div>
+<div class="text-center">
+<span class="text-on-surface text-6xl font-black tracking-tighter mb-4 block" style="">+23.4%</span>
+<span class="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase" style="">Снижение Churn Rate</span>
+</div>
+<div class="text-center">
+<span class="text-on-surface text-6xl font-black tracking-tighter mb-4 block" style="">600+</span>
+<span class="text-xs font-bold tracking-[0.2em] text-zinc-500 uppercase" style="">Проведенных тестов</span>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-zinc-900 dark:bg-black w-full pt-24 pb-12">
+<div class="flex flex-col items-center gap-12 px-8 max-w-screen-2xl mx-auto">
+<div class="text-lg font-black text-white uppercase tracking-tighter" style="">ALFA RESEARCH CENTER</div>
+<div class="flex flex-wrap justify-center gap-12">
+<a class="text-zinc-500 hover:text-white font-['Inter'] text-xs uppercase tracking-[0.2em] font-medium transition-colors" href="#" style="">МЕТОДОЛОГИЯ</a>
+<a class="text-zinc-500 hover:text-white font-['Inter'] text-xs uppercase tracking-[0.2em] font-medium transition-colors" href="#" style="">КОМПЛАЕНС</a>
+<a class="text-zinc-500 hover:text-white font-['Inter'] text-xs uppercase tracking-[0.2em] font-medium transition-colors" href="#" style="">КОНФИДЕНЦИАЛЬНОСТЬ</a>
+<a class="text-zinc-500 hover:text-white font-['Inter'] text-xs uppercase tracking-[0.2em] font-medium transition-colors" href="#" style="">ИНТЕГРАЦИЯ С JIRA</a>
+</div>
+<div class="w-full h-px bg-zinc-800"></div>
+<div class="text-zinc-600 font-['Inter'] text-xs uppercase tracking-[0.2em] font-medium text-center" style="">© 2026 ALFA RESEARCH CENTER. ВСЕ ПРАВА ЗАЩИЩЕНЫ.</div>
+</div>
+</footer>
+</body></html>
